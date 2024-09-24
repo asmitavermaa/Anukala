@@ -2,10 +2,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
-import HeroSection from './components/heroSection';
-import ArrivalsSection from './components/arrivalSection';
+import HeroSection from './pages/heroSection';
+import ArrivalsSection from './pages/arrivalSection';
 import Footer from './components/footer';
-import ShopPaintings from './components/shop';
+import ShopPaintings from './pages/shop';
 
 function App() {
   return (

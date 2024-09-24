@@ -1,6 +1,7 @@
 // src/components/Navbar.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa'; // Import cart icon
 
 const Navbar = () => {
   return (
@@ -12,8 +13,9 @@ const Navbar = () => {
         <a href="#" className="hover:underline">Stories</a>
         <a href="#" className="hover:underline">About</a>
       </div>
-      <div className="space-x-4">
-        <input type="text" placeholder="Search" className="border px-2 py-1" />
+      <div className="space-x-4 flex items-center">
+        {/* Cart Icon */}
+        <FaShoppingCart className="text-xl hover:underline" />
         <a href="#" className="hover:underline">Login</a>
       </div>
     </nav>

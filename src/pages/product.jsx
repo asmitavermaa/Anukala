@@ -1,3 +1,4 @@
+// src/components/product.jsx
 import React from 'react';
 
 const Product = ({ product }) => {
