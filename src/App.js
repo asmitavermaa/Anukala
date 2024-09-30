@@ -21,7 +21,6 @@ function App() {
               <Navbar />
               <HeroSection />
               <ArrivalsSection />
-              <About />
               <Footer />
             </>
           } />
@@ -29,6 +28,14 @@ function App() {
             <>
               <Navbar />
               <ShopPaintings />
+              <Footer />
+            </>
+          } />
+
+          <Route path="/about" element={
+            <>
+              <Navbar />
+              <About />
               <Footer />
             </>
           } />
