@@ -10,13 +10,13 @@ const Navbar = () => {
       <div className="space-x-8 text-lg">
         <Link to="/" className="hover:underline">Home</Link>
         <Link to="/shop" className="hover:underline">Shop</Link>
-        <a href="#" className="hover:underline">Stories</a>
-        <a href="#" className="hover:underline">About</a>
+        <Link to="/about" className="text-lg hover:text-gray-700">About</Link>
+        
       </div>
       <div className="space-x-4 flex items-center">
-        {/* Cart Icon */}
+      
         <FaShoppingCart className="text-xl hover:underline" />
-        <a href="#" className="hover:underline">Login</a>
+        <Link to="/login" className="text-lg hover:text-gray-700">Login</Link>
       </div>
     </nav>
   );

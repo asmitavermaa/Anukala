@@ -6,24 +6,36 @@ import HeroSection from './pages/heroSection';
 import ArrivalsSection from './pages/arrivalSection';
 import Footer from './components/footer';
 import ShopPaintings from './pages/shop';
+import Login from './components/login';
+import Signup from './components/signup';
+import About from './pages/about';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+
         <Routes>
-         
           <Route path="/" element={
             <>
+              <Navbar />
               <HeroSection />
               <ArrivalsSection />
+              <About />
+              <Footer />
             </>
           } />
-        
-          <Route path="/shop" element={<ShopPaintings />} />
+          <Route path="/shop" element={
+            <>
+              <Navbar />
+              <ShopPaintings />
+              <Footer />
+            </>
+          } />
+
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );
