@@ -2,7 +2,7 @@ import React from 'react';
 
 const ArrivalsSection = () => {
   return (
-    <div className="text-center py-20 bg-[#c3c796]"> {/* Increased padding for more space */}
+    <div className="text-center py-20 bg-[#78b087]"> {/* Increased padding for more space */}
       <h2 className="text-4xl mb-8">Our latest arrivals</h2> {/* Larger heading */}
       <button className="px-8 py-3 border border-black mb-12 hover:bg-black hover:text-white transition">
         Shop All

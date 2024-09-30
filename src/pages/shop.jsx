@@ -8,7 +8,7 @@ function ShopPaintings() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-[#c3c796] px-4 py-8"> 
+    <div className="w-full min-h-screen bg-[#78b087] px-4 py-8"> 
       <div className="flex justify-between items-center mb-6">
         {/* Categories */}
         <div className="flex space-x-4">

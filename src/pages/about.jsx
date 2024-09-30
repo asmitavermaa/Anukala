@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="bg-[#c3c796] about-page py-16 px-8 md:px-16">
+    <div className="bg-[#78b087] about-page py-16 px-8 md:px-16">
       <h1 className="text-4xl font-bold text-center mb-12">About the Painters</h1>
 
       {/* Mission Section */}
