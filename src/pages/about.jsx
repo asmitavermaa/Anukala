@@ -35,7 +35,7 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-4">Meet the Painters</h2>
           <p className="text-lg">
             Behind each masterpiece is a team of talented artists who pour their hearts into every 
-            creation. Meet John, Sarah, and Alex, a family of painters with a shared passion for 
+            creation. Meet Amita Verma and Swarnima Mathur, best friends with a shared passion for 
             bringing art to life. They have dedicated their lives to perfecting their craft and 
             sharing their love for art with the world.
           </p>
