@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from 'react';
 
+import image1 from '../resources/image1.jpeg'; 
+import image2 from '../resources/image2.jpeg';
+import image3 from '../resources/image3.jpeg';
+import image4 from '../resources/image4.jpeg';
+import image5 from '../resources/image5.jpeg';
+
 const HeroSection = () => {
   const images = [
-    'https://via.placeholder.com/1200x800/FFD700', // Replace with actual image URLs
-    'https://via.placeholder.com/1200x800/FF8C00',
-    'https://via.placeholder.com/1200x800/DC143C',
-    'https://via.placeholder.com/1200x800/4682B4',
-    'https://via.placeholder.com/1200x800/32CD32'
+    image1,
+    image2,
+    image3,
+    image4,
+    image5
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -14,9 +20,9 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+    }, 3000); 
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+    return () => clearInterval(interval); 
   }, [images.length]);
 
   return (

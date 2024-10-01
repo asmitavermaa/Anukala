@@ -1,8 +1,6 @@
-// src/components/Navbar.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaShoppingCart } from 'react-icons/fa'; // Import cart icon
-
+import { FaShoppingCart } from 'react-icons/fa'; 
 const Navbar = () => {
   return (
     <nav className="flex justify-between items-center px-8 py-4 bg-black">
