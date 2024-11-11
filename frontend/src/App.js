@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 import HeroSection from './pages/heroSection';
@@ -10,53 +10,68 @@ import CheckoutPage from './pages/checkout';
 import Login from './components/login';
 import Signup from './components/signup';
 import About from './pages/about';
+import Confirmation from './pages/confirmation';
 
 function App() {
-  const [userName, setUserName] = useState("");  // State to store the username
-
   return (
     <Router>
       <div className="App">
         <Routes>
+          {/* Home Page Route */}
           <Route path="/" element={
             <>
-              <Navbar userName={userName} />  {/* Pass userName for greeting */}
+              <Navbar />
               <HeroSection />
               <ArrivalsSection />
               <Footer />
             </>
           } />
+
+          {/* Shop Page Route */}
           <Route path="/shop" element={
             <>
-              <Navbar userName={userName} />
+              <Navbar />
               <ShopPaintings />
               <Footer />
             </>
           } />
 
+          {/* About Page Route */}
           <Route path="/about" element={
             <>
-              <Navbar userName={userName} />
+              <Navbar />
               <About />
               <Footer />
             </>
           } />
 
-          <Route path="/login" element={<Login setUserName={setUserName} />} />
+          {/* Login & Signup Routes */}
+          <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-
+          
+          {/* Product Details Route */}
           <Route path="/product/:productId" element={
             <>
-              <Navbar userName={userName} />
+              <Navbar />
               <ProductPage />
               <Footer />
             </>
           } />
 
+          {/* Checkout Page Route */}
           <Route path="/checkout" element={
             <>
-              <Navbar userName={userName} />
+              <Navbar />
               <CheckoutPage />
+              <Footer />
+            </>
+          } />
+
+          {/* Confirmation Page Route */}
+          <Route path="/confirmation" element={
+            <>
+              <Navbar />
+              <Confirmation />
               <Footer />
             </>
           } />
